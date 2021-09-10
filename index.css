@@ -1,0 +1,120 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    color: var(--txt-primary);
+}
+.nav-list{
+    display: flex;
+    justify-content: flex-end;
+}
+h1,h2{
+    font-family: "Raleway", sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+header{
+    background: var(--cl-primary);
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+.nav-list a{
+    font-family: "Poppins", sans-serif;
+    display: block;
+    padding: 1em;
+    text-transform: uppercase;
+}
+.nav-list a:hover{
+    background-color: var(--txt-primary);
+    color: var(--cl-primary);
+}
+.about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80");
+    background-position: center;
+    background-size: cover;
+}
+.about-section h2{
+    font-size: 3rem;
+    color: var(--cl-primary);
+    font-style: italic;
+    font-weight: 400;
+}
+.projects-section{
+    background-color: var(--cl-secondary);
+    padding: 3em 2em;
+}
+.projects-flex{
+    width: 100%;
+    max-width: 1400px;
+    margin: 2em auto 3em auto;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+.project-tile{
+    background: var(--cl-primary);
+    border-radius: 5px;
+    display: block;
+    width: 320px;
+}
+.project-image{
+    height: 320px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+.project-title{
+    text-align: center;
+}
+.project-title:hover{
+    background-color: var(--txt-primary);
+    color: var(--cl-primary);
+    border-radius: 5px;
+}
+.contact-section{
+    font-family: "Poppins", sans-serif;
+    background-color: var(--cl-tertiary);
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.coffee{
+    font-style: italic;
+    font-weight: 200;
+    margin-top: 1em;
+}
+.contact-links{
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contact{
+    padding: 0.75em 1.5em;
+    transition: transform 0.2s ease-out;
+    transform: translateY(0);
+}
+.contact:hover{
+    transform: translateY(10px);
+}
+.footer{
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    background: var(--cl-tertiary);
+    border-top: 4px solid var(--cl-primary);
+    padding: 2em 0;
+    justify-content: space-evenly;
+}
